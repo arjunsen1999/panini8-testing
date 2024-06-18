@@ -103,6 +103,7 @@ const authOptions: NextAuthOptions = {
     },
   },
   debug: true,
+  secret: "arjun62367637sec637ret"
 };
 
 const handler: any = (req : any, res : any) => NextAuth(req, res, authOptions);
