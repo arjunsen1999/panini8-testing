@@ -8,7 +8,7 @@ import "katex/dist/katex.min.css";
 import { useAuth } from "@/store/Play";
 import Cookies from "js-cookie";
 import Timer from "./Timer";
-import useTimerStore from "@/store/Timer";
+import {useTimerStore} from "@/store/Timer";
 
 interface McqProps {
   goal: string;

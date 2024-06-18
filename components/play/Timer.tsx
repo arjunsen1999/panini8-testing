@@ -2,7 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import Cookies from "js-cookie";
-import useTimerStore from "@/store/Timer";
+import {useTimerStore} from "@/store/Timer";
 
 const Timer: React.FC = () => {
   const { seconds, setSeconds, startTimer, stopTimer } = useTimerStore();

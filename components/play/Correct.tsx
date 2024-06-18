@@ -1,5 +1,5 @@
 import { useAuth } from "@/store/Play";
-import useTimerStore from "@/store/Timer";
+import {useTimerStore} from "@/store/Timer";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { Suspense } from "react";
 
 export default function AskQuestionLayout({
   children,
@@ -31,7 +31,10 @@ export default function AskQuestionLayout({
           <span className="text-[#59B792] text-lg font-medium cursor-pointer hidden md:flex">
             Progress
           </span>
-          <Link href={"/more"} className=" hidden md:flex gap-2 text-[#292828] font-medium cursor-pointer">
+          <Link
+            href={"/more"}
+            className=" hidden md:flex gap-2 text-[#292828] font-medium cursor-pointer"
+          >
             <span className="font-medium">More</span>
             <ChevronDown />
           </Link>
@@ -50,7 +53,7 @@ export default function AskQuestionLayout({
             className="rounded-full cursor-pointer h-10 w-10"
           />
         </nav>
-        {children}
+        <Suspense>{children}</Suspense>
 
         {/* /////////////////// */}
         <div className="bg-white w-full flex md:hidden justify-between p-3 px-8 fixed bottom-0 left-0 ">

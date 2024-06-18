@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Cookies from "js-cookie";
 import React from "react";
-import useTimerStore from "@/store/Timer";
+import {useTimerStore} from "@/store/Timer";
 
 const Incorrect = (id: any) => {
   const { setSeconds } = useTimerStore((state) => state);

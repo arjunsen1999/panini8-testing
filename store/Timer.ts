@@ -1,4 +1,4 @@
-import create from 'zustand';
+import {create} from 'zustand';
 import Cookies from 'js-cookie';
 
 interface TimerState {
@@ -43,4 +43,4 @@ const useTimerStore = create<TimerState>((set, get) => {
   };
 });
 
-export default useTimerStore;
+export {useTimerStore};

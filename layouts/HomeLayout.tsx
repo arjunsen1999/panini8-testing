@@ -1,5 +1,5 @@
 import Navbar from "@/components/home/Navbar";
-import React from "react";
+import React, { Suspense } from "react";
 
 export default function HomeLayout({
   children,
@@ -11,7 +11,9 @@ export default function HomeLayout({
       <div className="sm:px-16 px-6 py-2">
         <Navbar />
       </div>
-      <div>{children}</div>
+      <Suspense>
+        <div>{children}</div>
+      </Suspense>
     </div>
   );
 }

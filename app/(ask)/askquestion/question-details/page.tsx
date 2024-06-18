@@ -72,7 +72,7 @@ function makeMathString(input: any) {
 
 export default function QuestionDetailsPage() {
   const searchParams = useSearchParams();
-  const id = searchParams.get("id");
+  const id = searchParams.get("id") || "";
   const [questionData, setQuestionData] = useState<any | any>(null);
   const [comment, setComment] = useState("");
   const [commentData, setCommentData] = useState<any>([]);
